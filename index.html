@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <header>
+      <h1>Calculadora de daño PoKéMoN</h1>
+      <h3>By: Juan Antonio</h3>
+    </header>
+    <div class="container">
+      <div class="izquierda">
+        <p>Tipo ataque</p>
+        <select id="TipoA">
+          <option value="-1">Seleccione uno</option>
+          <option value="0">Normal</option>
+          <option value="1">Lucha</option>
+          <option value="2">Volador</option>
+          <option value="3">Veneno</option>
+          <option value="4">Tierra</option>
+          <option value="5">Roca</option>
+          <option value="6">Bicho</option>
+          <option value="7">Fantasma</option>
+          <option value="8">Acero</option>
+          <option value="9">Fuego</option>
+          <option value="10">Agua</option>
+          <option value="11">Planta</option>
+          <option value="12">Eléctrico</option>
+          <option value="13">Psíquico</option>
+          <option value="14">Hielo</option>
+          <option value="15">Dragón</option>
+          <option value="16">siniestro</option>
+          <option value="17">Hada</option>
+        </select>
+
+        <p>Tipo defensa 1</p>
+        <select id="TipoD1">
+          <option value="-1">Seleccione uno</option>
+          <option value="0">Normal</option>
+          <option value="1">Lucha</option>
+          <option value="2">Volador</option>
+          <option value="3">Veneno</option>
+          <option value="4">Tierra</option>
+          <option value="5">Roca</option>
+          <option value="6">Bicho</option>
+          <option value="7">Fantasma</option>
+          <option value="8">Acero</option>
+          <option value="9">Fuego</option>
+          <option value="10">Agua</option>
+          <option value="11">Planta</option>
+          <option value="12">Eléctrico</option>
+          <option value="13">Psíquico</option>
+          <option value="14">Hielo</option>
+          <option value="15">Dragón</option>
+          <option value="16">siniestro</option>
+          <option value="17">Hada</option>
+        </select>
+
+        <p>Tipo defensa 2</p>
+        <select id="TipoD2">
+          <option value="-1">Seleccione uno</option>
+          <option value="0">Normal</option>
+          <option value="1">Lucha</option>
+          <option value="2">Volador</option>
+          <option value="3">Veneno</option>
+          <option value="4">Tierra</option>
+          <option value="5">Roca</option>
+          <option value="6">Bicho</option>
+          <option value="7">Fantasma</option>
+          <option value="8">Acero</option>
+          <option value="9">Fuego</option>
+          <option value="10">Agua</option>
+          <option value="11">Planta</option>
+          <option value="12">Eléctrico</option>
+          <option value="13">Psíquico</option>
+          <option value="14">Hielo</option>
+          <option value="15">Dragón</option>
+          <option value="16">siniestro</option>
+          <option value="17">Hada</option>
+        </select>
+        <p>
+          <p>STAB</p>
+          <select id="stab">
+            <option value="1">No</option>
+            <option value="1.5">Sí</option>
+          </select>
+        </p>
+      </div>
+
+      <div class="centro">
+        <p>Nivel pokémon</p>
+        <input type="number" id="lvlpkm" min="1" max="100" value="5" required />
+        <p>Potencia del ataque</p>
+        <input type="number" min="1" id="potenciaMov" value="5" required />
+
+        <p>Daño de ataque (Pokémon)</p>
+        <input type="number" min="1" id="ataquePkm" value="5" required />
+
+        <p>Defensa (Pokémon)</p>
+        <input type="number" min="1" id="defensaPkm" value="5" required />
+
+        <input type="button" value="Calcular" onclick="calculaDmg()" />
+      </div>
+
+      <div class="derecha">
+        <div id="result"></div>
+      </div>
+
+      <!--       <div>
+        <iframe
+          src="https://giphy.com/embed/iBANmdIlMNJVC"
+          width="200"
+          height="80"
+          frameborder="0"
+          class="giphy-embed"
+          allowfullscreen
+        ></iframe>
+      </div> -->
+
+    </div>
+  </body>
+</html>

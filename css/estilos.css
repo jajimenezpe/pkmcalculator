@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h4,
+h5,
+p {
+  margin: 0px;
+}
+
+@font-face {
+  font-family: Pokemon;
+  src: url("fonts/pk1.ttf");
+}
+
+body {
+  background-color: white;
+}
+
+header {
+  font-family: Pokemon;
+  text-align: center;
+  letter-spacing: 0.25em;
+}
+
+.container {
+  font-family: "Lobster", cursive;
+  margin: 20px auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container > div {
+  margin: 1em;
+  width: 25%;
+}
+
+select,
+input[type="number"] {
+  width: 45%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.izquierda,
+.centro,
+.derecha {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #ffffcc;
+  border-radius: 1em;
+  text-align: center;
+}
+
+input[type="button"] {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 33%;
+}
