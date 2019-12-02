@@ -16,7 +16,7 @@ p {
 }
 
 body {
-  background-color: white;
+  background-color: #ffffcc;
 }
 
 header {
@@ -30,38 +30,65 @@ header {
   margin: 20px auto;
   width: 90%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-}
-
-.container > div {
-  margin: 1em;
-  width: 25%;
-}
-
-select,
-input[type="number"] {
-  width: 45%;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.izquierda,
-.centro,
-.derecha {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: #ffffcc;
-  border-radius: 1em;
   text-align: center;
 }
 
-input[type="button"] {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  width: 33%;
+.container > div {
+  width: 80%;
+}
+
+select,
+input,
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+select,
+input {
+  width: 65%;
+  height: 2em;
+}
+
+@media screen and (min-width: 576px) {
+  body {
+    background-color: white;
+  }
+
+  .container {
+    flex-direction: row;
+    background-color: #ffffcc;
+    border-radius: 1em;
+  }
+
+  .container > div {
+    width: 40%;
+    margin: 1em;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .container {
+    background-color: white;
+  }
+
+  .container > div {
+    width: 29%;
+  }
+
+  .izquierda,
+  .centro,
+  .derecha {
+    background-color: #ffffcc;
+    border-radius: 1em;
+  }
+
+  input[type="button"] {
+    margin-bottom: 2em;
+    margin-top: 1em;
+  }
 }
